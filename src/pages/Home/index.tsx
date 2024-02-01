@@ -1,4 +1,21 @@
 import React from "react";
-import { View,Text,StyleSheet,Button } from "react-native";
-import {useNavigation} from '@react-navigation/native'
+import { View,Text,StyleSheet } from "react-native";
 
+export function Home(){
+    return(
+        <View style={styles.container}>
+            <Text id="home">Home</Text>
+            <Text id="msg"></Text>
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        padding: 50,
+        backgroundColor:'#4169E1',
+        alignContent:'center',
+        alignItems: 'center'
+    }
+})

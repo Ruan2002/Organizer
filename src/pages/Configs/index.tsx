@@ -1,10 +1,10 @@
 import React from "react";
 import { View,Text,StyleSheet } from "react-native";
 
-export function Notifications(){
+export function Configs(){
     return(
         <View style={styles.container}>
-            <Text>Mensagens</Text>
+            <Text>Configurações</Text>
         </View>
     )
 }
