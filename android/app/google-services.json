@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "580809527445",
+    "project_id": "organizerapp-c292d",
+    "storage_bucket": "organizerapp-c292d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580809527445:android:b8e8cd93fc10509a084b9c",
+        "android_client_info": {
+          "package_name": "com.organizerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6VBCrQzepGymqct7X846-PajipBaendA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

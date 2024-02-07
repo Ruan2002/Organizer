@@ -4,6 +4,7 @@ import { Home } from '../pages/Home'
 import {Notifications} from '../pages/Notifications'
 import {Profile} from '../pages/Profile'
 import { Configs } from '../pages/Configs'
+import { View } from 'react-native'
 
 const Tab = createBottomTabNavigator();
 
@@ -37,14 +38,38 @@ export function Routes(){
             <Tab.Screen
               name='Notifications'
               component={Notifications}
+              options={{
+                tabBarIcon: ({ focused, size, color }) => {
+                    if (focused) {
+                      return <Ionicons name="chatbubbles" size={size} color={color} />;
+                    }
+                    return <Ionicons name="chatbubbles-outline" size={size} color={color} />;
+                  }
+              }}
             />
             <Tab.Screen
               name='Profile'
               component={Profile}
+              options={{
+                tabBarIcon: ({ focused, size, color }) => {
+                    if (focused) {
+                      return <Ionicons name="person" size={size} color={color} />;
+                    }
+                    return <Ionicons name="person-outline" size={size} color={color} />;
+                  }
+              }}
             />
             <Tab.Screen
               name='Configs'
               component={Configs}
+              options={{
+                tabBarIcon: ({ focused, size, color }) => {
+                    if (focused) {
+                      return <Ionicons name="settings-sharp" size={size} color={color} />;
+                    }
+                    return <Ionicons name="settings-outline" size={size} color={color} />;
+                  }
+              }}
             />
         </Tab.Navigator>
     )

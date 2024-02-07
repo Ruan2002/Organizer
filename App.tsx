@@ -1,5 +1,6 @@
 import React from "react";
-import { SafeAreaView,Text,StyleSheet,StatusBar } from 'react-native';
+import Estilos from './src/pages/Estilos'
+import { SafeAreaView,Text,StyleSheet,StatusBar, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import { Routes } from "./src/Routes"; 
 
